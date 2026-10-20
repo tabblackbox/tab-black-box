@@ -1,0 +1,17 @@
+{
+ "name": "e2e",
+ "version": "1.0.0",
+ "description": "",
+ "main": "index.js",
+ "scripts": {
+  "e2e": "node e2e.mjs",
+  "postinstall": "npx -y @puppeteer/browsers install chrome@155.0.8059.84 --path .cache"
+ },
+ "keywords": [],
+ "author": "",
+ "license": "ISC",
+ "type": "module",
+ "dependencies": {
+  "puppeteer-core": "^23.11.1"
+ }
+}

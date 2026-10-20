@@ -1,0 +1,7 @@
+body{font:13px system-ui,sans-serif;margin:12px;color:#222}.popup{width:300px}
+h1{font-size:16px;margin:0 0 8px}.small{font-size:11px;color:#555}button{margin:2px 4px 2px 0;cursor:pointer}
+.snap{border:1px solid #ddd;border-radius:6px;padding:8px;margin:6px 0}.mass{border-color:#c33;background:#fff4f4}
+.badge{font-size:10px;padding:1px 5px;border-radius:8px;background:#eee;margin-left:4px}.mass .badge{background:#c33;color:#fff}
+.win{margin:4px 0 4px 10px}.tab{margin-left:20px;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.grp{margin-left:14px;font-weight:600}.warn{background:#fffbe6;border:1px solid #e6d58a;padding:8px;border-radius:6px}
+section{margin-bottom:18px}input[type=search]{width:60%}

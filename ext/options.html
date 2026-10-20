@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Tab Black Box</title><link rel="stylesheet" href="ui.css"></head>
+<body><h1>Tab Black Box: history and settings</h1>
+<p class="warn">Restore opens tabs in new windows and never closes your existing tabs. Logins, cookies, sessions, form contents, scroll position, page state, and back/forward history are not restored. Restored tabs load fresh from their URL.</p>
+<section><h2>History</h2>
+<input type="search" id="q" placeholder="Search by title or URL"> <button id="snap">Snapshot now</button>
+<p class="small" id="tier"></p><p id="restmsg" class="warn" role="status" hidden style="white-space:pre-line"></p><div id="list"></div></section>
+<section><h2>Backup file</h2>
+<p class="small">The backup file is saved to Downloads/TabBlackBox/tab-backup.json and is updated at most hourly, only when something changed, and after a mass close. It lives on this computer only. If you delete or move it, it is recreated on the next export, but nothing older than what is still in extension storage can be recovered. If Chrome is set to "Ask where to save each file", you may see a save prompt. Chrome may show a download indicator on each export.</p>
+<button id="export">Export now</button> <label><input type="checkbox" id="stamped"> also save a timestamped copy</label> <span id="expmsg" class="small" role="status"></span>
+<p>Import a backup: <input type="file" id="file" accept=".json,application/json"></p><p id="impmsg" class="small"></p></section>
+<section><h2>Settings</h2>
+<label>Scheduled snapshot every <input type="number" id="mins" min="5" max="60" style="width:50px"> minutes (5 to 60)</label><br>
+<label><input type="checkbox" id="expOn"> Automatic backup file export</label><br><button id="save">Save settings</button> <span id="savemsg" class="small"></span></section>
+<section><h2>Subscription</h2>
+<p class="small">Free: 30 days of history. Paid ($15 per year): unlimited history. Payments are handled by ExtensionPay and Stripe in a normal browser tab.</p>
+<button id="upgrade">Upgrade</button> <button id="manage" hidden>Manage subscription</button> <button id="login">Already paid? Log in</button> <button id="recheck">Re-check status</button> <span id="licmsg" class="small" role="status"></span></section>
+<script src="options.js" type="module"></script></body></html>
