@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Tab Black Box",
-  "version": "0.1.0",
-  "description": "Automatically saves snapshots of your open windows, tabs, and tab groups on your computer so you can restore them.",
+  "name": "Tab Black Box: Auto Tab Backup & Session Restore",
+  "version": "0.1.1",
+  "description": "Automatic local backup of every window, tab and tab group. Undo mass tab closes. No account, no cloud, no site access.",
   "permissions": [
     "tabs",
     "tabGroups",
